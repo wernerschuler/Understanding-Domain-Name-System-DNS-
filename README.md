@@ -60,3 +60,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Notice that this command has failed because there is no record of mainframe
 
     <img src="https://i.imgur.com/CsMzUsR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+**5. Create a DNS A-Record on DC-1 for mainframe and set it to DC-1s private IP address**
+  - From DC-1 --> Start --> Server Manager --> Tools --> DNS
+  - Expand DC-1 --> Forward Lookup Zone --> Your domain (mydomain.com) --> 
