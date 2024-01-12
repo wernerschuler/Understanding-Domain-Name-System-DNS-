@@ -63,4 +63,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 **5. Create a DNS A-Record on DC-1 for mainframe and set it to DC-1s private IP address**
   - From DC-1 --> Start --> Server Manager --> Tools --> DNS
-  - Expand DC-1 --> Forward Lookup Zone --> Your domain (mydomain.com) --> 
+  - Expand DC-1 --> Forward Lookup Zone --> Your domain (mydomain.com) --> Right click --> New Host (A or AAAA)...
+     - Name: Mainframe
+     - IP address: DC-1's private IP address --> Add Host
+
+    <img src="https://i.imgur.com/8m8RwMj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+       
+       
