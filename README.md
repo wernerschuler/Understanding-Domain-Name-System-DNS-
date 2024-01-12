@@ -43,26 +43,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
    - Start --> Type 'Remote Desktop Connection --> Paste DC-1's public IP address
    - Enter the username and password for your domain admin account
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+**2. Login to Client-1 using your domain admin account**
+  - portal.azure.com --> Virtual machines --> Client-1 --> Copy Client-1's public IP address
+  - Start --> Type 'Remote Desktop Connection --> Paste Client-1's public IP address
+  - Enter the username and password for your domain admin account (image below)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+    <img src="https://i.imgur.com/ibkSBp7.png" height="40%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+**3. From Client-1 ping "mainframe" see how the ping failed**
+  - From Client-1 --> Start --> Enter 'cmd' --> Enter 'ping mainframe'
+
+    <img src="https://i.imgur.com/0Criu4G.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+**4. Use command nslookup to check for mainframe's record**
+  - From Client-1 --> Start --> Enter 'cmd --> Enter 'nslookup mainframe'
+  - Notice that this command has failed because there is no record of mainframe
+
+    <img src="https://i.imgur.com/CsMzUsR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
