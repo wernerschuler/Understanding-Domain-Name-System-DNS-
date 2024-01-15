@@ -64,9 +64,24 @@ This tutorial outlines the implementation of on-premises Active Directory within
 **5. Create a DNS A-Record on DC-1 for mainframe and set it to DC-1s private IP address**
   - From DC-1 --> Start --> Server Manager --> Tools --> DNS
   - Expand DC-1 --> Forward Lookup Zone --> Your domain (mydomain.com) --> Right click --> New Host (A or AAAA)...
-     - Name: Mainframe
+     - Name: mainframe
      - IP address: DC-1's private IP address --> Add Host
 
     <img src="https://i.imgur.com/8m8RwMj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+**6. Need to do step 6**
+
+<h2>Local DNS Cache Exercise</h2>
+
+**7. Go to DC-1 and change mainframe's record address to 8.8.8.8**
+  - In DC-1 --> Server Manager --> Tools --> DNS
+  - Expand DC-1 --> Forward Lookup Zone --> Your domain --> mainframe --> Change IP address to 8.8.8.8 --> Apply --> OK
+
+**8. Go to Client-1 and ping mainframe. See that it still pings the old IP address**
+  - In Client-1 --> Start --> Type and open cmd --> type ping mainframe
+
+**9. Check the local dns cache (ipconfig /displaydns)**
+  - Go to cmd --> Enter ipconfig /displaydns 
+    
        
        
