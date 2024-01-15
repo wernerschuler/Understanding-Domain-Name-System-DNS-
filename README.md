@@ -82,6 +82,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 **9. Check the local dns cache (ipconfig /displaydns)**
   - Go to cmd --> Enter ipconfig /displaydns 
-    
+
+**10. Flush the DNS cache (ipconfig /flushdns). See that the cache is empty**
+  - Go to cmd --> Run as administrator --> Enter ipconfig /flushdns
+
+**11. Ping mainframe again. See the new address of the record**
+  - In cmd --> Enter ping mainframe
+
+<h2>CNAME Record</h2>
+
+**12. Go to DC-1 and create a CNAME record that points the host "search" to www.google.com**
+  - In DNS Manager --> Right click --> New Alias (CNAME)...
+  - Alias name: search
+  - FQDN for target host: www.google.com
+  - OK
+
+**13. Go to Client-1 and ping "search", see the results of the CNAME record**
+  - In cmd --> Enter ping search
+
+**14. On Client-1 nslookup "search", see the results of the CNAME record**
+  - In cma --> Enter nslookup search
+
+**what is a root hint? What is DNS, what is a DNS a-record
        
        
