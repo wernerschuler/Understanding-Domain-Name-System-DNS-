@@ -74,8 +74,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Local DNS Cache Exercise</h2>
 
 **7. Go to DC-1 and change mainframe's record address to 8.8.8.8**
-  - In DC-1 --> Server Manager --> Tools --> DNS
-  - Expand DC-1 --> Forward Lookup Zone --> Your domain --> mainframe --> Change IP address to 8.8.8.8 --> Apply --> OK
+  - mainframe --> Change IP address to 8.8.8.8 --> Apply --> OK
+
+  <img src="https://i.imgur.com/KSBJcpA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 **8. Go to Client-1 and ping mainframe. See that it still pings the old IP address**
   - In Client-1 --> Start --> Type and open cmd --> type ping mainframe
@@ -86,8 +87,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 **10. Flush the DNS cache (ipconfig /flushdns). See that the cache is empty**
   - Go to cmd --> Run as administrator --> Enter ipconfig /flushdns
 
+ <img src="https://i.imgur.com/01LzcTP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
 **11. Ping mainframe again. See the new address of the record**
   - In cmd --> Enter ping mainframe
+
+<img src="https://i.imgur.com/S7Ipkyr.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h2>CNAME Record</h2>
 
