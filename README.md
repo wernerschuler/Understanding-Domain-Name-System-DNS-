@@ -1,34 +1,22 @@
 # Understanding-Domain-Name-System-DNS-
 <p align="center">
-<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
+<img src="https://i.imgur.com/VN2T0zi.jpg" alt="Domain name system logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
+- Command Prompt
 - Active Directory Domain Services
-- PowerShell
 
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
 
 <h2>Requirements</h2>
 
@@ -97,16 +85,24 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>CNAME Record</h2>
 
 **12. Go to DC-1 and create a CNAME record that points the host "search" to www.google.com**
-  - In DNS Manager --> Right click --> New Alias (CNAME)...
+  - Start --> Server Manager --> Tools --> DNS
+  - DC-1 --> Forward Lookup Zones --> mydomain.com
+  - Right click --> New Alias (CNAME)...
   - Alias name: search
   - FQDN for target host: www.google.com
   - OK
 
+<img src="https://i.imgur.com/NJKlzqB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
 **13. Go to Client-1 and ping "search", see the results of the CNAME record**
   - In cmd --> Enter ping search
 
+<img src="https://i.imgur.com/eu29TSG.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
 **14. On Client-1 nslookup "search", see the results of the CNAME record**
-  - In cma --> Enter nslookup search
+  - In cmd --> Enter nslookup search
+
+<img src="https://i.imgur.com/BC7PA95.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 **what is a root hint? What is DNS, what is a DNS a-record
        
