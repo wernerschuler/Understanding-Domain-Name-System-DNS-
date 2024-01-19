@@ -24,7 +24,7 @@
   - Active Directory running on a virtual machine in Azure
   - A client virtual machine running in Azure and joined to the domain
 
- Definition
+ Definitions
  -- 
  - **Domain name system (DNS)** - A system that translate human readable domain names such as www.google.com into it's corresponding IP address such as 172.217.6.14
  - **Root hints** - Information that guide your computer or device to find important servers on the internet. Root hints provide your computer with information about important servers that is used as a starting point to find other servers.
