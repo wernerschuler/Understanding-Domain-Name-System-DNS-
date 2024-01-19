@@ -1,4 +1,4 @@
-# Understanding-Domain-Name-System-DNS-
+# Understanding-Domain-Name-System-DNS
 <p align="center">
 <img src="https://i.imgur.com/VN2T0zi.jpg" alt="Domain name system logo"/>
 </p>
@@ -26,9 +26,11 @@
 
  Definition
  -- 
- - Domain name system (DNS) - A system that translate human readable domain names such as www.google.com into it's corresponding IP address such as 172.217.6.14
- - Root hints - Information that guide your computer or device to find important servers on the internet. Root hints provide your computer with information about important servers that is used as a starting point to find other servers.
+ - **Domain name system (DNS)** - A system that translate human readable domain names such as www.google.com into it's corresponding IP address such as 172.217.6.14
+ - **Root hints** - Information that guide your computer or device to find important servers on the internet. Root hints provide your computer with information about important servers that is used as a starting point to find other servers.
     - So when your computer needs to find a specific website, it uses the root hints to find the nearest root server. Then it will ask that server for information about the next server responsible for the website you want to visit. This process continues until you reach the server responsible for the website you are looking for.
+ - **A-record** - A-record maps a domain name to the IP address of the computer hosting the domain. For example, To access Google, you'll type google.com. At a domain name server, there's an A-record that points to the IP address 172.217.6.14.
+ - **CNAME record** - Allows you to associate an alternate domain name with the official domain name. CNAME record allows you to create a nickname and associate it with the canonical domain name, effectively redirecting the requests to the desired destination.
 
 <h2>A-Record Task</h2>
 
