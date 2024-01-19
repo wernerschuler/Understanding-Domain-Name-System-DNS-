@@ -57,34 +57,32 @@
 
     <img src="https://i.imgur.com/8m8RwMj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**6. Need to do step 6**
-
 <h2>Local DNS Cache Exercise</h2>
 
-**7. Go to DC-1 and change mainframe's record address to 8.8.8.8**
+**6. Go to DC-1 and change mainframe's record address to 8.8.8.8**
   - mainframe --> Change IP address to 8.8.8.8 --> Apply --> OK
 
   <img src="https://i.imgur.com/KSBJcpA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**8. Go to Client-1 and ping mainframe. See that it still pings the old IP address**
+**7. Go to Client-1 and ping mainframe. See that it still pings the old IP address**
   - In Client-1 --> Start --> Type and open cmd --> type ping mainframe
 
-**9. Check the local dns cache (ipconfig /displaydns)**
-  - Go to cmd --> Enter ipconfig /displaydns 
+**8. Check the local dns cache (ipconfig /displaydns)**
+  - Go to Command Prompt --> Enter ipconfig /displaydns 
 
-**10. Flush the DNS cache (ipconfig /flushdns). See that the cache is empty**
-  - Go to cmd --> Run as administrator --> Enter ipconfig /flushdns
+**9. Flush the DNS cache (ipconfig /flushdns). See that the cache is empty**
+  - Go to Command Prompt --> Run as administrator --> Enter ipconfig /flushdns
 
  <img src="https://i.imgur.com/01LzcTP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**11. Ping mainframe again. See the new address of the record**
-  - In cmd --> Enter ping mainframe
+**10. Ping mainframe again. See the new address of the record**
+  - In Command Prompt --> Enter ping mainframe
 
 <img src="https://i.imgur.com/S7Ipkyr.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h2>CNAME Record</h2>
 
-**12. Go to DC-1 and create a CNAME record that points the host "search" to www.google.com**
+**11. Go to DC-1 and create a CNAME record that points the host "search" to www.google.com**
   - Start --> Server Manager --> Tools --> DNS
   - DC-1 --> Forward Lookup Zones --> mydomain.com
   - Right click --> New Alias (CNAME)...
@@ -94,13 +92,13 @@
 
 <img src="https://i.imgur.com/NJKlzqB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**13. Go to Client-1 and ping "search", see the results of the CNAME record**
-  - In cmd --> Enter ping search
+**12. Go to Client-1 and ping "search", see the results of the CNAME record**
+  - In Command Prompt --> Enter ping search
 
 <img src="https://i.imgur.com/eu29TSG.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**14. On Client-1 nslookup "search", see the results of the CNAME record**
-  - In cmd --> Enter nslookup search
+**13. On Client-1 nslookup "search", see the results of the CNAME record**
+  - In Command Prompt --> Enter nslookup search
 
 <img src="https://i.imgur.com/BC7PA95.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
