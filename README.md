@@ -104,6 +104,5 @@
 
 <img src="https://i.imgur.com/BC7PA95.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**what is a root hint? What is DNS, what is a DNS a-record
        
        
