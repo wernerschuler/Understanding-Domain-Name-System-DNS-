@@ -24,6 +24,12 @@
   - Active Directory running on a virtual machine in Azure
   - A client virtual machine running in Azure and joined to the domain
 
+ Definition
+ -- 
+ - Domain name system (DNS) - A system that translate human readable domain names such as www.google.com into it's corresponding IP address such as 172.217.6.14
+ - Root hints - Information that guide your computer or device to find important servers on the internet. Root hints provide your computer with information about important servers that is used as a starting point to find other servers.
+    - So when your computer needs to find a specific website, it uses the root hints to find the nearest root server. Then it will ask that server for information about the next server responsible for the website you want to visit. This process continues until you reach the server responsible for the website you are looking for.
+
 <h2>A-Record Task</h2>
 
 **1. Login to DC-1 using your domain admin account**
