@@ -1,9 +1,11 @@
-# Understanding-Domain-Name-System-DNS
+
 <p align="center">
 <img src="https://i.imgur.com/VN2T0zi.jpg" alt="Domain name system logo"/>
 </p>
 
+<h1>Learning Domain name system (DNS)</h1>
 
+- This tutorial involves learning and experimenting with DNS
 
 <h2>Environments and Technologies Used</h2>
 
