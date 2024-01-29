@@ -3,7 +3,7 @@
 <img src="https://i.imgur.com/VN2T0zi.jpg" alt="Domain name system logo"/>
 </p>
 
-<h1>Learning Domain name system (DNS)</h1>
+<h1>Learning Domain Name System (DNS)</h1>
 
 - This tutorial involves learning and experimenting with DNS
 
@@ -29,7 +29,7 @@
  Definitions
  -- 
  - **Domain name system (DNS)** - A system that translate human readable domain names such as www.google.com into it's corresponding IP address such as 172.217.6.14
- - **Root hints** - Information that guide your computer or device to find important servers on the internet. Root hints provide your computer with information about important servers that is used as a starting point to find other servers.
+ - **Root hints** - Information that guides your computer or device to find important servers on the internet. Root hints provide your computer with information about important servers that are used as a starting point to find other servers.
     - So when your computer needs to find a specific website, it uses the root hints to find the nearest root server. Then it will ask that server for information about the next server responsible for the website you want to visit. This process continues until you reach the server responsible for the website you are looking for.
  - **A-record** - A-record maps a domain name to the IP address of the computer hosting the domain. For example, To access Google, you'll type google.com. At a domain name server, there's an A-record that points to the IP address 172.217.6.14.
  - **CNAME record** - Allows you to associate an alternate domain name with the official domain name. CNAME record allows you to create a nickname and associate it with the canonical domain name, effectively redirecting the requests to the desired destination.
@@ -53,7 +53,7 @@
 
     <img src="https://i.imgur.com/0Criu4G.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**4. Use command nslookup to check for mainframe's record**
+**4. Use the command nslookup to check for mainframe's record**
   - From Client-1 --> Start --> Enter 'cmd --> Enter 'nslookup mainframe'
   - Notice that this command has failed because there is no record of mainframe
 
@@ -95,14 +95,14 @@
 **11. Go to DC-1 and create a CNAME record that points the host "search" to www.google.com**
   - Start --> Server Manager --> Tools --> DNS
   - DC-1 --> Forward Lookup Zones --> mydomain.com
-  - Right click --> New Alias (CNAME)...
+  - Right-click --> New Alias (CNAME)...
   - Alias name: search
   - FQDN for target host: www.google.com
   - OK
 
 <img src="https://i.imgur.com/NJKlzqB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-**12. Go to Client-1 and ping "search", see the results of the CNAME record**
+**12. Go to Client-1 and ping "search", to see the results of the CNAME record**
   - In Command Prompt --> Enter ping search
 
 <img src="https://i.imgur.com/eu29TSG.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
